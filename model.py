@@ -32,7 +32,7 @@ def train_model():
                 metrics=['accuracy'])
 
     # Train the model
-    model.fit(train_images, train_labels, epochs=5, validation_data=(test_images, test_labels))
+    model.fit(train_images, train_labels, epochs=10, validation_data=(test_images, test_labels))
 
     # Evaluate the model for accuracy
     test_loss, test_acc = model.evaluate(test_images, test_labels)
